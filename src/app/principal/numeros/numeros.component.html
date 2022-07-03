@@ -1,1 +1,29 @@
 <p>numeros works!</p>
+
+<h1>Pipes Numeros</h1>
+<div class="contenedor">
+    <div class="contenedor-item">
+        <mat-card>
+            <mat-card-title>Total Ventas | Numero</mat-card-title>
+            <mat-card-subtitle>{{ totalVentas | number }}</mat-card-subtitle>
+        </mat-card>
+    </div>
+    <div class="contenedor-item">
+        <mat-card>
+            <mat-card-title>Total Ventas | Currency</mat-card-title>
+            <mat-card-subtitle>{{ totalVentas | currency:'EUR' }}</mat-card-subtitle>
+        </mat-card>
+    </div>
+
+    <div class="contenedor-item">
+        <mat-card>
+            <mat-card-title>Porcentaje | percent</mat-card-title>
+            <mat-card-subtitle>{{ pocentajeVentas| percent}}</mat-card-subtitle>
+        </mat-card>   
+</div>
+<div class="contenedor-item">
+    <mat-card>
+        <mat-card-title>Porcentaje | percent</mat-card-title>
+        <mat-card-subtitle>{{ pocentajeVentas| percent: '2.2-2' }}</mat-card-subtitle>
+    </mat-card>
+</div>
