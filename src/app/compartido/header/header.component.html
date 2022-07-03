@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item routerLink=""><mat-icon>home</mat-icon>Basicos</button>
+  <button mat-menu-item routerLink="numeros"> <mat-icon></mat-icon> Numeros</button>
+  <button mat-menu-item routerLink="otros"><mat-icon></mat-icon>Otros</button>
+</mat-menu>
+</mat-toolbar>
